@@ -3,6 +3,12 @@
 A real-time 2D RPG sandbox where procedurally named NPCs live, move, act, and
 remember — with every decision powered by a live LLM call returning structured JSON.
 
+Npcs move and live in real-time, LLM calls are triggered and queued.
+Result from LLM call is acted on in real time, as it is processed.
+If your Ollama or LM Studio model is capable of very large contexts,
+
+You can run multiple calls simultaneously by changing the value in
+Config.Py Which is also where you set up your LLM model name and URL.
 \---
 
 ## Setup
@@ -13,10 +19,10 @@ pip install -r requirements.txt
 
 # 2. Set your specific Ollama or LM Studio base URL and chosen model in config.py
 
-\# 3. Run
+# 3. Run
 python main.py
 
-# Load from save (or it auto-loads if saves/world\_save.json exists)
+# Load from save (or it auto-loads if saves/world_save.json exists)
 python main.py --load
 ```
 
@@ -39,9 +45,9 @@ python main.py --load
 |**Space**|Pause / resume|
 |**F5**|Quick save|
 |**F9**|Quick load|
-|**D**|Toggle debug overlay (paths, action queues)|
-|**I**|Open inspector for selected NPC|
-|**N**|Spawn a random NPC|
+|**Shift+D**|Toggle debug overlay (paths, action queues)|
+|**Shift+I**|Open inspector for selected NPC|
+|**Shift+N**|Spawn a random NPC|
 |**Escape**|Quit (auto-saves)|
 
 ### Developer Console (bottom-right)
@@ -83,7 +89,7 @@ main.py          Entry point, game loop, event routing
 ```
 NPC arrives at destination  ─┐
 Periodic check (5 game-min) ─┼─▶  scheduler.py  ──▶  llm.py (build\_npc\_prompt)
-Interruption event          ─┘         │                      │
+Interruption event          ─┘          │                      │
                                         │                      ▼
                                         │           Anthropic API call (async thread)
                                         │                      │
@@ -128,6 +134,6 @@ Each NPC carries:
 
 ## Save File
 
-Saves to `saves/world\_save.json`.  Auto-saves every 3 real-minutes.
-Backup of previous save kept as `world\_save.json.bak`.
+Saves to `saves/world_save.json`.  Auto-saves every 3 real-minutes.
+Backup of previous save kept as `world_save.json.bak`.
 
