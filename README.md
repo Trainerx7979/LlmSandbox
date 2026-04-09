@@ -42,7 +42,7 @@ python main.py --load
 |**Left-click** (Item tool)|Place item at cursor|
 |**Scroll** (Item tool)|Cycle through item types|
 |**Left-click** (Move tool)|Teleport selected NPC to cursor|
-|**Space**|Pause / resume|
+|**Shift+Space**|Pause / resume|
 |**F5**|Quick save|
 |**F9**|Quick load|
 |**Shift+D**|Toggle debug overlay (paths, action queues)|
