@@ -15,6 +15,8 @@ To learn. For us all to learn. And to have fun. I designed this to be as open fo
 potential as possible. And hopefully, easy to addon/tune to your own needs.
 Whether you want to watch a mini world live, or want to learn more about how LLMs
 and sometimes we think, any setup should be just a few *minor* adjustments away.
+Expect some bugs. I'm working as fast as I can... :)
+<img width="1828" height="928" alt="Screenshot" src="https://github.com/user-attachments/assets/f66de4cc-7235-4998-b42c-6cc29748c915" />
 
 ## Setup
 
