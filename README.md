@@ -10,6 +10,11 @@ If your Ollama or LM Studio model is capable of very large contexts,
 You can run multiple calls simultaneously by changing the value in
 Config.Py Which is also where you set up your LLM model name and URL.
 \---
+Purpose:
+To learn. For us all to learn. And to have fun. I designed this to be as open for
+potential as possible. And hopefully, easy to addon/tune to your own needs.
+Whether you want to watch a mini world live, or want to learn more about how LLMs
+and sometimes we think, any setup should be just a few *minor* adjustments away.
 
 ## Setup
 
@@ -91,9 +96,9 @@ NPC arrives at destination  ─┐
 Periodic check (5 game-min) ─┼─▶  scheduler.py  ──▶  llm.py (build\_npc\_prompt)
 Interruption event          ─┘          │                      │
                                         │                      ▼
-                                        │           Anthropic API call (async thread)
-                                        │                      │
-                                        │◀──── JSON response ──┘
+                                        │     Open AI compatible API call (async thread)
+                                        │                      │   You can supply this with
+                                        │◀──── JSON response ──┘   LM Studio or Ollama.
                                         │
                                         ▼
                               Apply: mood, goals, memories,
