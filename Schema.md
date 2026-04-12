@@ -1,3 +1,5 @@
+```Json
+
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Agent Response Schema",
@@ -278,3 +280,4 @@
     }
   }
 }
+```
