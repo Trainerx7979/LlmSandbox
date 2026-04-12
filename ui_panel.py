@@ -141,7 +141,7 @@ class DevPanel:
             ("⬛ Debug",  "debug"),
         ]
         cbx = x + 8
-        cby = y + height - 200
+        cby = y + height - 250
         for i, (lbl, key) in enumerate(ctrl_labels):
             col = i % 2
             row = i // 2
