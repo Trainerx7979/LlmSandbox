@@ -1,5 +1,14 @@
 # NPC Sandbox — LLM-Driven Simulation
 
+**Why does this exist?**
+The "Interactive Simulcra of Human Behavior" experiment was an amazing proof-of-concept
+toward agentic behavior research. It was an excellent "first-step" toward exploring the
+potential, and dangers, in having agent layers of protection as part of any system.
+It also explored inter-agent interactions allowing for new goals/plans to be made.
+But it was limited in true autonomy. The agents could interact, but could not make any
+real changes to their world. That is why this exists. These agents can interact, can
+change their world, can drive entire storylines.
+
 A real-time 2D RPG sandbox where procedurally named NPCs live, move, act, and
 remember — with every decision powered by a live LLM call returning structured JSON.
 
