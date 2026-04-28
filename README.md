@@ -153,3 +153,10 @@ Each NPC carries:
 Saves to `saves/world_save.json`.  Auto-saves every 3 real-minutes.
 Backup of previous save kept as `world_save.json.bak`.
 
+
+
+
+
+
+Any citations should be pointed to:
+https://zenodo.org/badge/DOI/10.5281/zenodo.19840395.svg
