@@ -159,4 +159,5 @@ Backup of previous save kept as `world_save.json.bak`.
 
 
 Any citations should be pointed to:
-https://zenodo.org/badge/DOI/10.5281/zenodo.19840395.svg
+<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.19840395.svg" width="200" alt="Alt text">
+
