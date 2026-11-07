@@ -94,7 +94,7 @@ main.py          Entry point, game loop, event routing
 ├── scheduler.py Physics, needs decay, movement, action execution, LLM triggers
 ├── llm.py       Prompt builder, response parser, async API calls (threaded)
 ├── renderer.py  Pygame camera, tilemap, procedural sprites, overlays
-├── ui\_panel.py  Right-side developer panel (tools, console, entity inspector)
+├── ui_panel.py  Right-side developer panel (tools, console, entity inspector)
 ├── inspector.py Tkinter deep-inspector popup (memories, goals, relationships)
 ├── persistence.py JSON save/load with auto-backup
 └── config.py    All constants: display, gameplay, colors, schemas
